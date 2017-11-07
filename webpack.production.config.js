@@ -1,11 +1,13 @@
+const conf = require('./webpack.config')
 const webpack = require('webpack')
 
 const { UglifyJsPlugin } = webpack.optimize
 
 module.exports = {
-  ...require('./webpack.config'),
+  ...conf,
   devtool: 'cheap-source-map',
   plugins: [
+    ...conf.plugins,
     new UglifyJsPlugin({
       compress: {
         warnings: false,
