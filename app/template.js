@@ -1,4 +1,4 @@
-
+export default body => `
   <!DOCTYPE html>
   <html>
     <head>
@@ -14,6 +14,7 @@
       <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     </head>
     <body>
-      <header><div class="content"><h1>Hello, I&#x27;m Leo!</h1><div class="summary">I&#x27;m a Software Engineer who advocates for simplicity and readability, I strive for elegant solutions leveraging different languages and paradigms.</div><div class="social"><a href="https://github.com/kewitz" target="_blank"><i class="fa fa-github-alt"></i></a><a href="https://angel.co/leokewitz" target="_blank"><i class="fa fa-angellist"></i></a><a href="https://www.linkedin.com/in/kewitz/?locale=en_US" target="_blank"><i class="fa fa-linkedin"></i></a><a href="mailto:leokewitz@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a></div></div></header>
+      ${body}
     </body>
   </html>
+`

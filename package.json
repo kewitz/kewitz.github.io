@@ -6,11 +6,13 @@
   "license": "UNLICENSED",
   "main": "app/index.jsx",
   "scripts": {
-    "build": "NODE_ENV=production webpack --config webpack.production.config.js",
+    "build": "NODE_ENV=production webpack --config webpack.production.config.js && yarn build-static",
+    "build-static": "NODE_PATH=$NODE_PATH:./app babel-node render.jsx",
     "start": "webpack-dev-server --config webpack.devel.config.js --devtool eval --progress --hot --content-base app"
   },
   "devDependencies": {
     "@invisible/eslint-config": "^1.1.7",
+    "babel-cli": "^6.26.0",
     "babel-core": "6.x",
     "babel-eslint": "7.x",
     "babel-loader": "6.x",

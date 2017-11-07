@@ -26,6 +26,16 @@
     "react/jsx-indent-props": ["error", 2],
     "react/prop-types": 0
   },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "moduleDirectory": [
+          "node_modules",
+          "app"
+        ]
+      }
+    }
+  },
   "plugins": [
     "compat",
     "import",
