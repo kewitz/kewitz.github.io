@@ -5,7 +5,7 @@
   "author": "Leonardo Kewitz <leokewitz@gmail.com>",
   "license": "UNLICENSED",
   "scripts": {
-    "build": "parcel build --dist-dir static ./src/index.html",
+    "build": "parcel build --dist-dir docs ./src/index.html",
     "start": "parcel ./src/index.html"
   },
   "devDependencies": {
